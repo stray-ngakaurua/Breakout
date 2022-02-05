@@ -1,0 +1,59 @@
+\hypertarget{console_8hpp_source}{}\doxysection{console.\+hpp}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{keyword}{namespace }console \{}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{comment}{// Resizes the console window, inputs are the new width and height}}
+\DoxyCodeLine{6 \textcolor{keywordtype}{void} resize(\textcolor{keywordtype}{int} w, \textcolor{keywordtype}{int} h);}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{comment}{// Moves the console cursor, inputs are the new X and Y position}}
+\DoxyCodeLine{9 \textcolor{keywordtype}{void} moveTo(\textcolor{keywordtype}{int} x, \textcolor{keywordtype}{int} y);}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{comment}{// Sets whether the cursor is visible or not, inputs are true/false}}
+\DoxyCodeLine{12 \textcolor{keywordtype}{void} setCursorVisible(\textcolor{keywordtype}{bool} yes);}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{comment}{// Checks if a single key was just pressed}}
+\DoxyCodeLine{15 \textcolor{keywordtype}{bool} keyboardHit();}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{comment}{// Checks which key is currently pressed}}
+\DoxyCodeLine{18 \textcolor{keywordtype}{int} getKeyPressed();}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20 \textcolor{comment}{// Arrow key codes}}
+\DoxyCodeLine{21 enum : \textcolor{keywordtype}{int} \{}
+\DoxyCodeLine{22     Up = 72,}
+\DoxyCodeLine{23     Down = 80,}
+\DoxyCodeLine{24     Left = 75,}
+\DoxyCodeLine{25     Right = 77,}
+\DoxyCodeLine{26 \};}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28 \textcolor{comment}{// Sets new text color, inputs are one of the colors above}}
+\DoxyCodeLine{29 \textcolor{keywordtype}{void} textColor(\textcolor{keywordtype}{int} color);}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31 \textcolor{comment}{// Sets new background color, inputs are one of the colors above}}
+\DoxyCodeLine{32 \textcolor{keywordtype}{void} backgroundColor(\textcolor{keywordtype}{int} color);}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34 \textcolor{comment}{// Available colors to use}}
+\DoxyCodeLine{35 enum : \textcolor{keywordtype}{int} \{}
+\DoxyCodeLine{36     Black,}
+\DoxyCodeLine{37     Blue,}
+\DoxyCodeLine{38     Green,}
+\DoxyCodeLine{39     Cyan,}
+\DoxyCodeLine{40     Red,}
+\DoxyCodeLine{41     Magenta,}
+\DoxyCodeLine{42     Brown,}
+\DoxyCodeLine{43     Lightgray,}
+\DoxyCodeLine{44     Darkgray,}
+\DoxyCodeLine{45     Lightblue,}
+\DoxyCodeLine{46     Lightgreen,}
+\DoxyCodeLine{47     Lightcyan,}
+\DoxyCodeLine{48     Lightred,}
+\DoxyCodeLine{49     Lightmagenta,}
+\DoxyCodeLine{50     Yellow,}
+\DoxyCodeLine{51     White,}
+\DoxyCodeLine{52 \};}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54 \};}
+
+\end{DoxyCode}

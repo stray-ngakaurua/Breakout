@@ -1,0 +1,24 @@
+\hypertarget{rect_8h_source}{}\doxysection{rect.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <random>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{9 \textcolor{keyword}{struct }\mbox{\hyperlink{struct_rectang}{Rectang}} \{}
+\DoxyCodeLine{10     \textcolor{keywordtype}{int} width, height, x, y;}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{18     \textcolor{comment}{//https://medium.com/@hemalatha.psna/collision-\/detection-\/in-\/javascript-\/efafe8bba2c0}}
+\DoxyCodeLine{19     \textcolor{keywordtype}{bool} \mbox{\hyperlink{struct_rectang_a92ae9942cc50f532a0c41b81ee6cb632}{intersects}}(\mbox{\hyperlink{struct_rectang}{Rectang}} other) \{}
+\DoxyCodeLine{20         \textcolor{keywordflow}{if} (x + width >= other.x \&\&}
+\DoxyCodeLine{21             other.x + other.width >= x \&\&}
+\DoxyCodeLine{22             y + height >= other.y \&\&}
+\DoxyCodeLine{23             other.y + other.height >= y) \{}
+\DoxyCodeLine{24             \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{25         \}}
+\DoxyCodeLine{26         \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{27     \}}
+\DoxyCodeLine{28 \};}
+
+\end{DoxyCode}

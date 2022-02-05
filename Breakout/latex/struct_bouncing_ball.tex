@@ -1,0 +1,81 @@
+\hypertarget{struct_bouncing_ball}{}\doxysection{Bouncing\+Ball Struct Reference}
+\label{struct_bouncing_ball}\index{BouncingBall@{BouncingBall}}
+
+
+{\ttfamily \#include $<$bouncing\+Ball.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{struct_bouncing_ball_ac5eba18d820df3de5c71a5b24bc4dae6}{update\+Ball}} ()
+\item 
+void \mbox{\hyperlink{struct_bouncing_ball_a67a5b0b99d65e71a8537313003afff57}{draw}} (sf\+::\+Render\+Window \&window)
+\item 
+\mbox{\hyperlink{struct_bouncing_ball_aace42db8b1c1dc3d5a1e476f8c49ce61}{Bouncing\+Ball}} ()
+\item 
+bool \mbox{\hyperlink{struct_bouncing_ball_a08db449339b4c472c31f30ec59ef078b}{intersects}} (\mbox{\hyperlink{struct_rectang}{Rectang}} rectangle)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_bouncing_ball_aeae9d068ad607dede331e39d3851b54e}\label{struct_bouncing_ball_aeae9d068ad607dede331e39d3851b54e}} 
+int {\bfseries x} = screen\+Width / 2
+\item 
+\mbox{\Hypertarget{struct_bouncing_ball_af14bbc4e273d96187982f6b0a08da6d4}\label{struct_bouncing_ball_af14bbc4e273d96187982f6b0a08da6d4}} 
+int {\bfseries y} = screen\+Height / 2
+\item 
+\mbox{\Hypertarget{struct_bouncing_ball_a89590613dfe45338b41b0a91628d79e0}\label{struct_bouncing_ball_a89590613dfe45338b41b0a91628d79e0}} 
+int {\bfseries vx} = 15
+\begin{DoxyCompactList}\small\item\em the balls velocity \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{struct_bouncing_ball_ae6f29c592671624444a13e5c33a37343}\label{struct_bouncing_ball_ae6f29c592671624444a13e5c33a37343}} 
+int {\bfseries vy} = 15
+\item 
+\mbox{\Hypertarget{struct_bouncing_ball_ab73b68286e87c94e31019c010db6df26}\label{struct_bouncing_ball_ab73b68286e87c94e31019c010db6df26}} 
+sf\+::\+Circle\+Shape {\bfseries shape}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The struct defines the ball we use to play in order to smash the bricks 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{struct_bouncing_ball_aace42db8b1c1dc3d5a1e476f8c49ce61}\label{struct_bouncing_ball_aace42db8b1c1dc3d5a1e476f8c49ce61}} 
+\index{BouncingBall@{BouncingBall}!BouncingBall@{BouncingBall}}
+\index{BouncingBall@{BouncingBall}!BouncingBall@{BouncingBall}}
+\doxysubsubsection{\texorpdfstring{BouncingBall()}{BouncingBall()}}
+{\footnotesize\ttfamily Bouncing\+Ball\+::\+Bouncing\+Ball (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+defining the position, color and radius for the ball 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{struct_bouncing_ball_a67a5b0b99d65e71a8537313003afff57}\label{struct_bouncing_ball_a67a5b0b99d65e71a8537313003afff57}} 
+\index{BouncingBall@{BouncingBall}!draw@{draw}}
+\index{draw@{draw}!BouncingBall@{BouncingBall}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Bouncing\+Ball\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+displaying the ball \mbox{\Hypertarget{struct_bouncing_ball_a08db449339b4c472c31f30ec59ef078b}\label{struct_bouncing_ball_a08db449339b4c472c31f30ec59ef078b}} 
+\index{BouncingBall@{BouncingBall}!intersects@{intersects}}
+\index{intersects@{intersects}!BouncingBall@{BouncingBall}}
+\doxysubsubsection{\texorpdfstring{intersects()}{intersects()}}
+{\footnotesize\ttfamily bool Bouncing\+Ball\+::intersects (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_rectang}{Rectang}}}]{rectangle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+checks collision between ball and rectangles 
+\begin{DoxyParams}{Parameters}
+{\em rectangle} & is the rectangle that is needed to be checked \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the rectangle has hit by the ball 
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_bouncing_ball_ac5eba18d820df3de5c71a5b24bc4dae6}\label{struct_bouncing_ball_ac5eba18d820df3de5c71a5b24bc4dae6}} 
+\index{BouncingBall@{BouncingBall}!updateBall@{updateBall}}
+\index{updateBall@{updateBall}!BouncingBall@{BouncingBall}}
+\doxysubsubsection{\texorpdfstring{updateBall()}{updateBall()}}
+{\footnotesize\ttfamily void Bouncing\+Ball\+::update\+Ball (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+updating the direction of the ball when it collides with the walls, floor and the ceiling 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+bouncing\+Ball.\+h\end{DoxyCompactItemize}

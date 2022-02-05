@@ -1,0 +1,127 @@
+\hypertarget{struct_game_menu}{}\doxysection{Game\+Menu Struct Reference}
+\label{struct_game_menu}\index{GameMenu@{GameMenu}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_game_menu_ad4994e0e2c73b94299d8d3142b4443bc}{Game\+Menu}} (sf\+::\+Font \&font)
+\item 
+void \mbox{\hyperlink{struct_game_menu_a237c18341173c9a0cfcd11c432970820}{arrow\+Down}} ()
+\item 
+void \mbox{\hyperlink{struct_game_menu_a87be9db90bea30c5820f7f5642bc3b61}{arrow\+Up}} ()
+\item 
+bool \mbox{\hyperlink{struct_game_menu_a2c95d4a781776e3e60a69d8f9fec5576}{arrow\+Select}} (sf\+::\+Render\+Window \&window, sf\+::\+Font \&font)
+\item 
+void \mbox{\hyperlink{struct_game_menu_a102893842bd7e3f9fd46c33d4917086e}{show\+High\+Score}} (sf\+::\+Render\+Window \&window, sf\+::\+Font \&font)
+\item 
+void \mbox{\hyperlink{struct_game_menu_a054bbc9fe3f55e8b2e74dc30529b854a}{help}} (sf\+::\+Render\+Window \&window, sf\+::\+Font \&font)
+\item 
+void \mbox{\hyperlink{struct_game_menu_a26d9afea074ec3cd59f7222d2dfb3347}{draw}} (sf\+::\+Render\+Window \&window)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{struct_game_menu_a4b2b3f37a083c9958e2ec4a4589f4986}\label{struct_game_menu_a4b2b3f37a083c9958e2ec4a4589f4986}} 
+sf\+::\+Text {\bfseries new\+Game\+Text}
+\item 
+\mbox{\Hypertarget{struct_game_menu_a4d89cb34893ad0470100ffd98e9849aa}\label{struct_game_menu_a4d89cb34893ad0470100ffd98e9849aa}} 
+sf\+::\+Text {\bfseries load\+Game\+Text}
+\item 
+\mbox{\Hypertarget{struct_game_menu_a7d2a7a90321a14aa4a7c229372b867cb}\label{struct_game_menu_a7d2a7a90321a14aa4a7c229372b867cb}} 
+sf\+::\+Text {\bfseries help\+Text}
+\item 
+\mbox{\Hypertarget{struct_game_menu_ace2b1af33c5b3838f5cd4c72ea5d5586}\label{struct_game_menu_ace2b1af33c5b3838f5cd4c72ea5d5586}} 
+sf\+::\+Text {\bfseries quit\+Text}
+\item 
+\mbox{\Hypertarget{struct_game_menu_abf74e408fa088438fbbd2db4b8d44464}\label{struct_game_menu_abf74e408fa088438fbbd2db4b8d44464}} 
+sf\+::\+Text {\bfseries arrow\+Text}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The struct defines a game menu, 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{struct_game_menu_ad4994e0e2c73b94299d8d3142b4443bc}\label{struct_game_menu_ad4994e0e2c73b94299d8d3142b4443bc}} 
+\index{GameMenu@{GameMenu}!GameMenu@{GameMenu}}
+\index{GameMenu@{GameMenu}!GameMenu@{GameMenu}}
+\doxysubsubsection{\texorpdfstring{GameMenu()}{GameMenu()}}
+{\footnotesize\ttfamily Game\+Menu\+::\+Game\+Menu (\begin{DoxyParamCaption}\item[{sf\+::\+Font \&}]{font }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Initilizes a game menu 
+\begin{DoxyParams}{Parameters}
+{\em font} & defines the type of the font. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{struct_game_menu_a237c18341173c9a0cfcd11c432970820}\label{struct_game_menu_a237c18341173c9a0cfcd11c432970820}} 
+\index{GameMenu@{GameMenu}!arrowDown@{arrowDown}}
+\index{arrowDown@{arrowDown}!GameMenu@{GameMenu}}
+\doxysubsubsection{\texorpdfstring{arrowDown()}{arrowDown()}}
+{\footnotesize\ttfamily void Game\+Menu\+::arrow\+Down (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+moves the arrow downward throught the game menu \mbox{\Hypertarget{struct_game_menu_a2c95d4a781776e3e60a69d8f9fec5576}\label{struct_game_menu_a2c95d4a781776e3e60a69d8f9fec5576}} 
+\index{GameMenu@{GameMenu}!arrowSelect@{arrowSelect}}
+\index{arrowSelect@{arrowSelect}!GameMenu@{GameMenu}}
+\doxysubsubsection{\texorpdfstring{arrowSelect()}{arrowSelect()}}
+{\footnotesize\ttfamily bool Game\+Menu\+::arrow\+Select (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window,  }\item[{sf\+::\+Font \&}]{font }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Checks which option has been chosen 
+\begin{DoxyParams}{Parameters}
+{\em window} & which displays the choices \\
+\hline
+{\em font} & defines the type of the font \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the player wants to quit 
+\end{DoxyReturn}
+\mbox{\Hypertarget{struct_game_menu_a87be9db90bea30c5820f7f5642bc3b61}\label{struct_game_menu_a87be9db90bea30c5820f7f5642bc3b61}} 
+\index{GameMenu@{GameMenu}!arrowUp@{arrowUp}}
+\index{arrowUp@{arrowUp}!GameMenu@{GameMenu}}
+\doxysubsubsection{\texorpdfstring{arrowUp()}{arrowUp()}}
+{\footnotesize\ttfamily void Game\+Menu\+::arrow\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+moves the arrow upward throught the game menu \mbox{\Hypertarget{struct_game_menu_a26d9afea074ec3cd59f7222d2dfb3347}\label{struct_game_menu_a26d9afea074ec3cd59f7222d2dfb3347}} 
+\index{GameMenu@{GameMenu}!draw@{draw}}
+\index{draw@{draw}!GameMenu@{GameMenu}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Game\+Menu\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Displays the menu 
+\begin{DoxyParams}{Parameters}
+{\em window} & to display the menu in \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{struct_game_menu_a054bbc9fe3f55e8b2e74dc30529b854a}\label{struct_game_menu_a054bbc9fe3f55e8b2e74dc30529b854a}} 
+\index{GameMenu@{GameMenu}!help@{help}}
+\index{help@{help}!GameMenu@{GameMenu}}
+\doxysubsubsection{\texorpdfstring{help()}{help()}}
+{\footnotesize\ttfamily void Game\+Menu\+::help (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window,  }\item[{sf\+::\+Font \&}]{font }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Displays help 
+\begin{DoxyParams}{Parameters}
+{\em window} & which displays the help info texts \\
+\hline
+{\em font} & defines the type of the font \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{struct_game_menu_a102893842bd7e3f9fd46c33d4917086e}\label{struct_game_menu_a102893842bd7e3f9fd46c33d4917086e}} 
+\index{GameMenu@{GameMenu}!showHighScore@{showHighScore}}
+\index{showHighScore@{showHighScore}!GameMenu@{GameMenu}}
+\doxysubsubsection{\texorpdfstring{showHighScore()}{showHighScore()}}
+{\footnotesize\ttfamily void Game\+Menu\+::show\+High\+Score (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window,  }\item[{sf\+::\+Font \&}]{font }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Displays high score menu 
+\begin{DoxyParams}{Parameters}
+{\em window} & which displays the high score texts \\
+\hline
+{\em font} & defines the type of the font \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Breakout.\+cpp\end{DoxyCompactItemize}
